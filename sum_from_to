@@ -1,0 +1,18 @@
+// Others/sum_from_to.cpp
+#include "sum_from_to.h"
+
+int sum_from_to(int first, int last) {
+    int sum = 0;
+
+    if (first > last) {
+        int temp = first;
+        first = last;
+        last = temp;
+    }
+
+    for (int i = first; i <= last; ++i) {
+        sum += i;
+    }
+
+    return sum;
+}
